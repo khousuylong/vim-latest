@@ -22,6 +22,7 @@ Simple Vim config for navigating files
 * S<tag> to surround selected text
 * cst<tag> to replace existing surround with <tag>
 * yss<tag> to surround current line
+* See all Eunich Linux key mappings: https://github.com/tpope/vim-eunuch
 
 ### ALE Lint Config ###
 
