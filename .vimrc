@@ -109,3 +109,6 @@ let g:lightline.component_type = {
       \ }
 
 let g:lightline.active = { 'right': [[ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok' ]] }
+
+" File type specific settings
+au BufNewFile, BufRead *.sld set filetype=xml
