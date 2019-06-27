@@ -43,6 +43,7 @@ set directory=/tmp  " Keep swap files in one location
 set tabstop=2                    " Global tab width.
 set shiftwidth=2                 " And again, related.
 set autoindent
+:set splitright                  " Open splits on the right
 
 set laststatus=2                  " Show the status line all the time
 " Useful status information at bottom of screen
@@ -66,7 +67,25 @@ Plug 'honza/vim-snippets'
 Plug 'ajh17/VimCompletesMe'
 Plug 'tpope/vim-surround'
 Plug 'sjl/badwolf'
-Plug 'tpope/vim-eunuc/h'
+Plug 'tpope/vim-eunuch'
+Plug 'xolox/vim-notes'
+Plug 'altercation/vim-colors-solarized'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'w0rp/ale'
+Plug 'maximbaz/lightline-ale'
+Plug 'jiangmiao/auto-pairs'
+Plug 'scrooloose/nerdcommenter'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'ajh17/VimCompletesMe'
+Plug 'tpope/vim-surround'
+Plug 'sjl/badwolf'
+Plug 'tpope/vim-eunuch'
+Plug 'xolox/vim-notes'
+Plug 'xolox/vim-misc'
 
 " Initialize plugin system
 call plug#end()
@@ -81,8 +100,9 @@ colorscheme badwolf
 map <leader>f :FZF<Enter>
 map <leader>s :Snippets<Enter>
 map <leader>b :Buffers<Enter>
-map <leader>n :NERDTreeToggle<Enter>
+map <leader>d :NERDTreeToggle<Enter>
 map <leader>t :terminal<Enter>
+map <leader>n :50vs note:Notepad<Enter>
 
 " Plugin Settings
 let NERDTreeChDirMode=2
@@ -93,6 +113,9 @@ filetype plugin on
 
 " Lightline Ale Integration
 let g:lightline = {}
+
+" Vim Notes
+let g:notes_directories = ['~/Documents/Notes']
 
 let g:lightline.component_expand = {
       \  'linter_checking': 'lightline#ale#checking',
