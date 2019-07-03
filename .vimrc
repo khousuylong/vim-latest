@@ -70,22 +70,9 @@ Plug 'sjl/badwolf'
 Plug 'tpope/vim-eunuch'
 Plug 'xolox/vim-notes'
 Plug 'altercation/vim-colors-solarized'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-Plug 'itchyny/lightline.vim'
-Plug 'scrooloose/nerdtree'
-Plug 'w0rp/ale'
-Plug 'maximbaz/lightline-ale'
-Plug 'jiangmiao/auto-pairs'
-Plug 'scrooloose/nerdcommenter'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'ajh17/VimCompletesMe'
-Plug 'tpope/vim-surround'
-Plug 'sjl/badwolf'
-Plug 'tpope/vim-eunuch'
-Plug 'xolox/vim-notes'
 Plug 'xolox/vim-misc'
+Plug 'leafgarland/typescript-vim'
+Plug 'heavenshell/vim-jsdoc'
 
 " Initialize plugin system
 call plug#end()
@@ -102,7 +89,8 @@ map <leader>s :Snippets<Enter>
 map <leader>b :Buffers<Enter>
 map <leader>d :NERDTreeToggle<Enter>
 map <leader>t :terminal<Enter>
-map <leader>n :50vs note:Notepad<Enter>
+map <leader>n :75vs note:Notepad<Enter>
+map <expr> <leader>n expand('%:t')== 'Notepad' ? ':wq<Enter>' : ':75vs note:Notepad<Enter>'
 
 " Plugin Settings
 let NERDTreeChDirMode=2
@@ -135,3 +123,7 @@ let g:lightline.active = { 'right': [[ 'linter_checking', 'linter_errors', 'lint
 
 " File type specific settings
 au BufNewFile, BufRead *.sld set filetype=xml
+
+augroup FileTypeSpecificAutocommands
+    autocmd FileType javascript setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2
+augroup END
