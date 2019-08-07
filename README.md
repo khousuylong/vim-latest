@@ -3,8 +3,9 @@
 Simple Vim config for navigating files
 
 ### Installation ###
-
 * Rename working directory to ~/.vim
+* Navigate the ~/.vim then run => curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 * Symlink .gvimrc - ln -s  ~/.vim/.gvimrc ~/.gvimrc
 * Symlink .vimrc - ln -s  ~/.vim/.vimrc ~/.vimrc
 
@@ -15,7 +16,7 @@ Simple Vim config for navigating files
 * \b navigate open buffers
 * :bd delete current file from buffer
 * \c<space> comment/uncomment selected text
-* CTRL+<tab> to launch a snippet 
+* <tab> to launch a snippet 
 * CTRL+J to to move forward to next snippet argument
 * CTRL+K to move back to previous snippet argumnet
 * \s to fuzzy find available snippets
@@ -28,4 +29,8 @@ Simple Vim config for navigating files
 
 * Lint packages for most languages need to be installed separately
 * User :ALEDetail to see what's happening if Lint isn't running on a file 
+
+### Create snippet
+* Inside ~/.vim create a folder => mkdir UltiSnips
+* Navigate to UltiSnips and create a snippet => touch cpp.snippets
 
