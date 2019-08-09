@@ -76,6 +76,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'xolox/vim-misc'
 Plug 'leafgarland/typescript-vim'
 Plug 'heavenshell/vim-jsdoc'
+Plug 'pangloss/vim-javascript'
 
 " Initialize plugin system
 call plug#end()
