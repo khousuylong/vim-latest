@@ -77,6 +77,8 @@ Plug 'xolox/vim-misc'
 Plug 'leafgarland/typescript-vim'
 Plug 'heavenshell/vim-jsdoc'
 Plug 'pangloss/vim-javascript'
+Plug 'prettier/vim-prettier'
+
 
 " Initialize plugin system
 call plug#end()
