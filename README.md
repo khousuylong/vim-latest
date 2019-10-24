@@ -8,6 +8,8 @@ Simple Vim config for navigating files
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 * Symlink .gvimrc - ln -s  ~/.vim/.gvimrc ~/.gvimrc
 * Symlink .vimrc - ln -s  ~/.vim/.vimrc ~/.vimrc
+* run vim
+* :PlugInstall
 
 ### Key Mappings ###
 
