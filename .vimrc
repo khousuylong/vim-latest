@@ -78,6 +78,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'heavenshell/vim-jsdoc'
 Plug 'pangloss/vim-javascript'
 Plug 'prettier/vim-prettier'
+Plug 'maxmellon/vim-jsx-pretty'
 
 
 " Initialize plugin system
@@ -86,8 +87,7 @@ call plug#end()
 " Enable Theme
 syntax enable
 set background=dark
-let g:badwolf_darkgutter = 1
-colorscheme badwolf
+let g:vim_jsx_pretty_colorful_config = 1 " default 0
 
 " My key mappings
 map <leader>f :FZF<Enter>
