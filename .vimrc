@@ -5,6 +5,7 @@ set encoding=utf-8                " Use UTF-8 everywhere.
 set go-=m go-=T go-=l go-=L go-=r go-=R go-=b go-=F " Hide all menu's and widgets from GVim GUI
 
 " Vim configuration
+set noswapfile
 set number                        " Show line numbers.
 set ruler                         " Show cursor position.
 
@@ -144,3 +145,8 @@ au BufNewFile, BufRead *.sld set filetype=xml
 augroup FileTypeSpecificAutocommands
     autocmd FileType javascript setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2
 augroup END
+
+vmap <C-c> "+yi
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <C-r><C-o>+
