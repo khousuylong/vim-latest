@@ -2,7 +2,14 @@
 
 Simple Vim config for navigating files
 
-## Installation
+### Installation ###
+* Rename working directory to ~/.vim
+* Navigate the ~/.vim then run => curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+* Symlink .gvimrc - ln -s  ~/.vim/.gvimrc ~/.gvimrc
+* Symlink .vimrc - ln -s  ~/.vim/.vimrc ~/.vimrc
+* run vim
+* :PlugInstall
 
 ### Location
 * Rename working directory to ~/.vim
@@ -35,6 +42,10 @@ sudo cp fonts/* /usr/share/fonts/operator/
 * cst<tag> to replace existing surround with <tag>
 * yss<tag> to surround current line
 * See all Eunich Linux key mappings: https://github.com/tpope/vim-eunuch
+
+### Create snippet
+* Inside ~/.vim create a folder => mkdir UltiSnips
+* Navigate to UltiSnips and create a snippet => touch cpp.snippets
 
 ### ALE Lint Config
 
