@@ -36,7 +36,7 @@ sudo mkdir -p /user/share/fonts/operator/
 sudo cp fonts/* /usr/share/fonts/operator/
 ```
 
-### Install nvim (neovim).###
+### Install nvim (neovim)
 
 * Download and install the appimage, use the output-document option to rename it to nvim:
 
