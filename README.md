@@ -36,50 +36,50 @@ sudo mkdir -p /user/share/fonts/operator/
 sudo cp fonts/* /usr/share/fonts/operator/
 ```
 
-## Install nvim (neovim).
+### Install nvim (neovim).###
 
-### Download and install the appimage, use the output-document option to rename it to nvim:
+* Download and install the appimage, use the output-document option to rename it to nvim:
 
 ```` 
 wget --quiet https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage --output-document nvim
 
 ````
 
-### Set the owner to root, and make nvim accessible to all users:
+* Set the owner to root, and make nvim accessible to all users:
 
 ````
 chmod +x nvim
 sudo chown root:root nvim
 ````
 
-### Move the binary file to /usr/bin:
+* Move the binary file to /usr/bin:
 
 ````
 sudo mv nvim /usr/bin
 ````
 
-### Move into your home directory and create the subfolder structure to store the configuration file:
+* Move into your home directory and create the subfolder structure to store the configuration file:
 
 ````
 cd ~
 mkdir -p .config/nvim
 ````
 
-### Install the Vim-plug Plugin Manager
+* Install the Vim-plug Plugin Manager
 To make it easier to install plugins, use the Vim-plug plugin manager. This plugin manager uses git to manage most plugins:
 
 ````
  curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
  ````
 
-### (Optional) Import Existing vim Configuration
+* (Optional) Import Existing vim Configuration
 If you already have a vim configuration you enjoy, reutilize it for nvim. While vim and nvim can share the same configuration file, create a separate one for nvim to prevent errors if you don’t have Vim-plug also configured for vim:
 
 ````
 ln -s ~/.vimrc ~/.config/nvim/init.vim
 ````
 
-### Or create a separate one beginning with the current contents of ~/.vimrc:
+* Or create a separate one beginning with the current contents of ~/.vimrc:
 
 ````
 cp ~/.vimrc ~/.config/nvim/init.vim
