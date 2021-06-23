@@ -5,10 +5,8 @@
 ### Download and install the appimage, use the output-document option to rename it to nvim:
 
 ```` 
-```
 wget --quiet https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage --output-document nvim
 
-```
 ````
 
 
