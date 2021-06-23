@@ -104,9 +104,18 @@ cp ~/.vimrc ~/.config/nvim/init.vim
 * See all Eunich Linux key mappings: https://github.com/tpope/vim-eunuch
 
 ### Create snippet
-* Inside ~/.vim create a folder => mkdir UltiSnips
-* Navigate to UltiSnips and create a snippet => touch cpp.snippets
-
+* Inside ~/.vim create a folder
+ 
+````
+ mkdir UltiSnips
+````
+ 
+* Navigate to UltiSnips and create a snippet 
+ 
+````
+touch cpp.snippets
+````
+ 
 ### ALE Lint Config
 
 * Lint packages for most languages need to be installed separately
