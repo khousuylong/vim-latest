@@ -1,5 +1,41 @@
 # README
 
+### Simple Vim config for navigating files
+
+### Installation ###
+* Rename working directory to ~/.vim
+
+````
+sudo mv vim-latest ~/.vim
+````
+
+* Navigate the ~/.vim then run
+
+````
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+````
+
+* Symlink .gvimrc
+ 
+````
+ln -s  ~/.vim/.gvimrc ~/.gvimrc
+````
+
+* Symlink .vimrc - 
+
+````
+ln -s  ~/.vim/.vimrc ~/.vimrc
+````
+
+### Fonts
+The configuration require the Operator font which has been packaged with nerd fonts for symbols. 
+Move the fonts in the font directory to your font directory:
+
+```
+sudo mkdir -p /user/share/fonts/operator/
+sudo cp fonts/* /usr/share/fonts/operator/
+```
+
 ## Install nvim (neovim).
 
 ### Download and install the appimage, use the output-document option to rename it to nvim:
@@ -48,31 +84,6 @@ ln -s ~/.vimrc ~/.config/nvim/init.vim
 ````
 cp ~/.vimrc ~/.config/nvim/init.vim
 ````
-
-### Simple Vim config for navigating files
-
-### Installation ###
-* Rename working directory to ~/.vim
-* Navigate the ~/.vim then run => curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-* Symlink .gvimrc - ln -s  ~/.vim/.gvimrc ~/.gvimrc
-* Symlink .vimrc - ln -s  ~/.vim/.vimrc ~/.vimrc
-* run vim
-* :PlugInstall
-
-### Location
-* Rename working directory to ~/.vim
-* Symlink .gvimrc - ln -s  ~/.vim/.gvimrc ~/.gvimrc
-* Symlink .vimrc - ln -s  ~/.vim/.vimrc ~/.vimrc
-
-### Fonts
-The configuration require the Operator font which has been packaged with nerd fonts for symbols. 
-Move the fonts in the font directory to your font directory:
-
-```
-sudo mkdir -p /user/share/fonts/operator/
-sudo cp fonts/* /usr/share/fonts/operator/
-```
 
 ## Key Mappings
 
