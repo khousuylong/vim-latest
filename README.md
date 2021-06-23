@@ -12,8 +12,10 @@ wget --quiet https://github.com/neovim/neovim/releases/download/nightly/nvim.app
 
 ### Set the owner to root, and make nvim accessible to all users:
 
+````
 chmod +x nvim
 sudo chown root:root nvim
+````
 
 ### Move the binary file to /usr/bin:
 
