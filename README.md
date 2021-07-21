@@ -110,10 +110,10 @@ cp ~/.vimrc ~/.config/nvim/init.vim
  mkdir UltiSnips
 ````
  
-* Navigate to UltiSnips and create a snippet 
+* Open any file, example open index.js 
  
 ````
-touch cpp.snippets
+:UltiSnipsEdit
 ````
  
 ### ALE Lint Config
